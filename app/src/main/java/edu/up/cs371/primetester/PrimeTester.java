@@ -14,7 +14,10 @@ public class PrimeTester {
      * @return true if n is prime
      */
     public static boolean isPrime(long n) {
-        if(n == 2){
+        if (n < 2){
+            return false;
+        }
+        else if(n == 2){
             return true;
         }
         else if (n % 2 == 0){
